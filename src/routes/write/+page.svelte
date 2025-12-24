@@ -117,7 +117,7 @@ ${content}`;
 				Preview
 
 				<div class="flex items-center justify-between gap-x-2">
-					<Button href="/blog">View Blogs</Button>
+					<Button href="/blog" class="dark:bg-neutral-900 dark:text-white">View Blogs</Button>
 
 					<Button onclick={toggleMode} variant="ghost" size="icon">
 						<SunIcon
