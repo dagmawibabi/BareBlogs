@@ -63,6 +63,7 @@
 		<Button href="https://github.com/dagmawibabi/bareblogs" target="_blank" variant="secondary"
 			>Clone Repository</Button
 		>
+		<Button class="bg-emerald-500 text-black hover:bg-emerald-400" href="/write">Write Blog</Button>
 		<Button href="/blog">Goto Blogs</Button>
 	</div>
 </div>

@@ -89,10 +89,16 @@ importers:
       svelte-loading-spinners:
         specifier: ^0.3.6
         version: 0.3.6
+      svelte-sonner:
+        specifier: ^1.0.7
+        version: 1.0.7(svelte@5.39.12)
     devDependencies:
       '@eslint/compat':
         specifier: ^1.2.3
         version: 1.4.0(eslint@9.37.0(jiti@1.21.7))
+      '@lucide/svelte':
+        specifier: ^0.482.0
+        version: 0.482.0(svelte@5.39.12)
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0
         version: 3.3.1(@sveltejs/kit@2.46.5(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.39.12)(vite@5.4.20(@types/node@24.9.1)))(svelte@5.39.12)(vite@5.4.20(@types/node@24.9.1)))
@@ -118,7 +124,7 @@ importers:
         specifier: ^10.4.20
         version: 10.4.21(postcss@8.5.6)
       bits-ui:
-        specifier: ^1.0.0-next.74
+        specifier: ^1.4.7
         version: 1.8.0(svelte@5.39.12)
       clsx:
         specifier: ^2.1.1
@@ -630,6 +636,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@lucide/svelte@0.482.0':
+    resolution: {integrity: sha512-n2ycHU9cNcleRDwwpEHBJ6pYzVhHIaL3a+9dQa8kns9hB2g05bY+v2p2KP8v0pZwtNhYTHk/F2o2uZ1bVtQGhw==}
+    peerDependencies:
+      svelte: ^5
 
   '@mapbox/node-pre-gyp@2.0.0':
     resolution: {integrity: sha512-llMXd39jtP0HpQLVI37Bf1m2ADlEb35GYSh1SDSLsBhR+5iCxiNGlT31yqbNtVHygHAtMy6dWFERpU2JgufhPg==}
@@ -2462,6 +2473,11 @@ packages:
     peerDependencies:
       svelte: ^5.7.0
 
+  runed@0.28.0:
+    resolution: {integrity: sha512-k2xx7RuO9hWcdd9f+8JoBeqWtYrm5CALfgpkg2YDB80ds/QE4w0qqu34A7fqiAwiBBSBQOid7TLxwxVC27ymWQ==}
+    peerDependencies:
+      svelte: ^5.7.0
+
   sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
@@ -2580,6 +2596,11 @@ packages:
 
   svelte-loading-spinners@0.3.6:
     resolution: {integrity: sha512-mthHQ2TwiwzTWzbFry3CBnVEfzqPOD9WkVw84OfSYzHRq6N9wgQ+yv37u81uPeuLU/ZOIPqhujpXquB1aol5ZQ==}
+
+  svelte-sonner@1.0.7:
+    resolution: {integrity: sha512-1EUFYmd7q/xfs2qCHwJzGPh9n5VJ3X6QjBN10fof2vxgy8fYE7kVfZ7uGnd7i6fQaWIr5KvXcwYXE/cmTEjk5A==}
+    peerDependencies:
+      svelte: ^5.0.0
 
   svelte-toolbelt@0.7.1:
     resolution: {integrity: sha512-HcBOcR17Vx9bjaOceUvxkY3nGmbBmCBBbuWLLEWO6jtmWH8f/QoWmbyUfQZrpDINH39en1b8mptfPQT9VKQ1xQ==}
@@ -3238,6 +3259,10 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@lucide/svelte@0.482.0(svelte@5.39.12)':
+    dependencies:
+      svelte: 5.39.12
 
   '@mapbox/node-pre-gyp@2.0.0':
     dependencies:
@@ -5392,6 +5417,11 @@ snapshots:
       esm-env: 1.2.2
       svelte: 5.39.12
 
+  runed@0.28.0(svelte@5.39.12):
+    dependencies:
+      esm-env: 1.2.2
+      svelte: 5.39.12
+
   sade@1.8.1:
     dependencies:
       mri: 1.2.0
@@ -5529,6 +5559,11 @@ snapshots:
       - supports-color
 
   svelte-loading-spinners@0.3.6: {}
+
+  svelte-sonner@1.0.7(svelte@5.39.12):
+    dependencies:
+      runed: 0.28.0(svelte@5.39.12)
+      svelte: 5.39.12
 
   svelte-toolbelt@0.7.1(svelte@5.39.12):
     dependencies:
